@@ -14,7 +14,7 @@ set -o xtrace
 
 rm -rf out
 
-if test "$CF_PAGES_BRANCH" = "auth-release"
+if test "$CF_PAGES_BRANCH" = "multi-deploy-test"
 then
     yarn export:auth
     cp -R apps/auth/out .
